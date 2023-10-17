@@ -11,62 +11,62 @@ body{
 
 .topbar{
     width: 100%;
-    margin:20px 0 0 0;
+    margin:5.333vw 0 0 0;
 }
 
 .logo{
     width:fit-content;
-    margin:auto 0 0 20px; 
+    margin:auto 0 0 5.333vw; 
 }
 
 .logo img{
-    width:40px;
+    width:10.667vw;
     height:auto;
     margin:auto 0 auto 0;
 }
 
 .logo p{
-    font:20px Montserrat-Bold;
+    font:5.333vw Montserrat-Bold;
     color:#687EFF;
     letter-spacing: 3px;
-    margin:auto 0 auto 15px;
+    margin:auto 0 auto 4vw;
 }
 
 .hamburg, .hamopen{
     flex-direction: column;
-    margin:auto 20px auto auto;
+    margin:auto 5.333vw auto auto;
     cursor: pointer;
 }
 
 .hamburg div:nth-child(1), .hamburg div:nth-child(2), .hamburg div:nth-child(3), .hamopen div:nth-child(1), .hamopen div:nth-child(2), .hamopen div:nth-child(3){
-    width:25px;
-    height:4px;
+    width:6.6vw;
+    height:1.067vw;
     background-color: #3a3a3a;
     border-radius: 50px;
-    margin:0 auto 6px auto; 
+    margin:0 auto 1.600vw auto; 
     transition: 0.5s;
 }
 
 .hamburg div:nth-child(2), .hamopen div:nth-child(2){
-    width:35px;
+    width:9.333vw;
 }
 
-.hamopen div:nth-child(1){transform: translateY(10px); height: 1px;}
+.hamopen div:nth-child(1){transform: translateY(2.667vw); height: 0.5vw;}
 
-.hamopen div:nth-child(3){transform: translateY(-10px); height: 1px;}
+.hamopen div:nth-child(3){transform: translateY(-2.667vw); height: 0.5vw;}
 
 .quote1, .quote2{
-    font:25px Montserrat-Semibold;
+    font:6.6vw Montserrat-Semibold;
     color:#3a3a3a;
-    margin:45px auto 0 auto;
+    margin:12vw auto 0 auto;
     word-wrap: break-word;
     text-align: center;
     letter-spacing: 3px;
 }
 
 .quote2{
-    font:35px Montserrat-Extrabold;
-    margin-top: 15px;
+    font:9.333vw Montserrat-Extrabold;
+    margin-top: 4vw;
     letter-spacing: 5px;
     background-image: url(../images/text_animation.jpg);
     background-clip: text;
@@ -81,64 +81,29 @@ body{
     99.99%{background-position: 100%, 100%;}
 }
 
-.button1, .button2{
+.button1, .button2, .button3, .button4{
     display: block;
     width:70vw;
     border-radius: 50px;
-    padding:7px 0 7px 0;
+    padding:1.867vw 0 1.867vw 0;
     background-color: #687EFF;
     text-align: center;
-    font:15px Montserrat-Medium;
+    font:4vw Montserrat-Medium;
     color:white;
-    margin:30px auto 0 auto;
+    margin:8vw auto 0 auto;
 }
 
-.button2{
-    margin-top: 7.5px;
+.button2, .button4{
+    margin-top: 2vw;
     background-color: white;
     border: 1px solid #687EFF;
     color:#687EFF;
 }
 
-.illus1{
-    width:100%;
-    margin:30px 0 0 0;
-}
-
-.illus1 img{
-    margin:auto 0 auto 20px;
-    width:200px;
-    height:auto;
-}
-
-.illus1 p{
-    font:12px Montserrat-Regular;
-    color:rgba(0, 0, 0, 0.5);
-    margin:auto 20px auto auto;
-    text-align: right;
-}
-
-.illus2{
-    width:100%;
-    margin:10px 0 30px 0;
-}
-
-.illus2 p{
-    font:12px Montserrat-Regular;
-    color:rgba(0, 0, 0, 0.5);
-    margin: auto auto auto 20px;
-}
-
-.illus2 img{
-    width:200px;
-    height: auto;
-    margin:auto 20px auto auto;
-}
-
 .sidebar, .sideopen{
     flex-direction: column;
     position: fixed;
-    width:0px;
+    width:0;
     height: 100%;
     border-right: 1px solid rgba(0, 0, 0, 0.5);
     background-color: white;
@@ -149,56 +114,8 @@ body{
 .sideopen{width:80vw;}
 
 .sidebar a, .sideopen a{
-    font:20px Montserrat-Medium;
+    font:5.333vw Montserrat-Medium;
     color:#3a3a3a;
-    margin:10px auto 0 20px;
-    min-width:150px;
-}
-
-.bottom{    
-    width: 100%;
-    height: auto;
-    bottom: 0;
-}
-
-.pctopbar, .mid1, .mid2{
-    display: none;
-}
-
-@media screen and (min-width:760px){
-    .topbar, .quote1, .quote2, .button1, .button2, .illus1, .illus2, .sidebar, .bottom{
-        display: none;
-    }
-
-    .pctopbar{
-        display: flex;
-        margin:20px 0 0 0;
-        width:100%;
-    }
-
-    .right_align{
-        margin:auto 20px auto auto;
-    }
-
-    .option{
-        margin:auto 0 auto 40px;
-        cursor: pointer;
-        flex-direction: column;
-        overflow-x: hidden;
-    }
-
-    .option p{
-        font:20px Montserrat-Medium;
-        color:#3a3a3a;
-        margin:auto;
-    }
-
-    .option div{
-        width:100%;
-        height: 2.5px;
-        border-radius: 50px;
-        background-color: #3a3a3a;
-        transform: translateX(-100%);
-        transition: 0.5s;
-    }
+    margin:2.667vw auto 0 5.333vw;
+    min-width:40vw;
 }

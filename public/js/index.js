@@ -17,7 +17,7 @@ var underline = document.querySelectorAll(".option div");
 
 for (let i=0; i<options.length; i++){
     options[i].addEventListener("mouseover", () => {
-        underline[i].style.transform = "translateX(0px)";
+        underline[i].style.transform = "translateX(0)";
     })
 }
 
